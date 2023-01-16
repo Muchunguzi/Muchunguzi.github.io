@@ -1,0 +1,355 @@
+body {
+    background-color: white;
+    font-family: Roboto;
+    text-align: center;
+}
+
+#header,
+#footer {
+    background: linear-gradient(#5cdb95, #376983);
+    color: #05386b;
+    align-items: center;
+    text-align: center;
+    height: 40px;
+    padding-top: 20px;
+}
+
+a.nav-link {
+    color: #05386b;
+    text-decoration: none;
+    margin-left: 40px;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+a.nav-link:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+#main,
+#call-to-action {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#Headline,
+#subHeadline {
+    background-color: white;
+    box-shadow: 5px 10px 7px #376983;
+    border-radius: 10px;
+}
+
+div#action-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+}
+
+button.callToAction {
+    margin-bottom: 10px;
+    background-color: #7e685a;
+    border: 1px solid #7e685a;
+    color: white;
+    border-radius: 5px;
+}
+
+.callToAction:hover {
+    cursor: pointer;
+
+}
+
+#supporting-visual {
+
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: black;
+}
+
+p#visual_text {
+    font-weight: bold;
+    font-size: 2rem;
+
+    height: 100%;
+}
+
+#visual-box {
+    
+    color: white;
+}
+
+#visual-pic {
+    margin-left: 0px;
+    height: 200px;
+    width: 100%;
+    border-radius: 30px;
+}
+
+#skills-section {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+
+}
+
+#web-dev,
+#doc-controller {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+    text-align: center;
+}
+
+i.fa-sharp,
+.fa-regular {
+    color: brown;
+    font-size: 50px;
+}
+
+li {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+#cv-button {
+    width: 100px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 3px;
+
+}
+
+div.percentage-bar {
+    border: 1px solid brown;
+    height: 10px;
+    width: 100%;
+}
+
+.percentage-cell {
+    width: 70%;
+}
+
+div#html-life {
+    background-color: greenyellow;
+    height: 100%;
+    width: 95%;
+}
+
+div#CSS-life {
+    background-color: greenyellow;
+    height: 100%;
+    width: 90%;
+}
+
+div#JavaScript-life {
+    background-color: red;
+    height: 100%;
+    width: 40%;
+}
+
+div#React-life {
+    background-color: red;
+    height: 100%;
+    width: 40%;
+}
+
+div#smm-life {
+    background-color: yellowgreen;
+    height: 100%;
+    width: 70%;
+}
+
+button#cv-button:hover {
+    cursor: pointer;
+}
+
+#footer {
+    font-size: 35px;
+
+}
+
+.fa-brands {
+    margin-left: 20px;
+}
+
+.fa-brands:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.hamburger{
+    top: -20px;
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border:  none;
+}
+
+.hamburger .bar, .hamburger:after , .hamburger:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before{
+ transform: rotate(-45deg) translate(-9px, 8px);
+}
+.hamburger.is-active .bar{
+    opacity: 0;
+}
+.hamburger.is-active:after{
+    transform: rotate(45deg) translate(-9px, -6px);
+}
+
+div.mobile-menu{
+    top: 100%;
+    left: 100%;
+    display: none;
+    transition: 0.4s;
+
+}
+
+div.mobile-menu.is-active{
+    display: block;
+}
+
+a.mobile-nav{
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-decoration: none;
+    background: linear-gradient( #5cdb95, green);
+    margin: 0 auto 5px;
+    width: 100%;
+    max-width: 100px
+    
+}
+
+a.mobile-nav:hover{
+  cursor: pointer;
+}
+
+section.work{
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 5%;
+    padding: 2%;
+    border-radius: 1%;
+}
+
+
+div.project-box{
+    border-radius: 5%;
+    background-color: black;
+    padding: 3%;
+    width: 70%;
+    height: 90%;
+    margin:0 auto
+}
+
+
+h2.project_title{
+    position: relative;
+    top: -150px;
+    color: black;
+    background-color: white;
+    
+}
+
+
+a.project_link{
+    text-decoration: none;
+}
+
+img#amy_project{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media only screen and (max-width: 1400px) {
+
+    /*Tablets [601px -> 1200px]*/
+    .hamburger{
+        display: none;
+    }
+    .mobile-menu{
+        display: none;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+
+
+    /*Tablets [601px -> 1200px]*/
+     .hamburger{
+        display: none;
+    }
+     .mobile-menu{
+        display: none;
+     }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    /*Big smartphones [425px -> 600px]*/
+    a.nav-link {
+        display: none;
+    }
+
+    .hamburger{
+        display: initial;
+    }
+
+    .mobile-menu{
+        display: initial;
+    }
+
+    div#action-box {
+        
+    }
+
+
+
+
+
+}
+
+@media only screen and (max-width: 425px) {
+    /*Small smartphones [325px -> 425px]*/
+
+    a.nav-link {
+        display: none;
+    }
+
+    .hamburger{
+        display: initial;
+    }
+
+}
