@@ -285,6 +285,10 @@ img#amy_project{
     height: 100%;
 }
 
+progress{
+ width: 100%;
+}
+
 
 
 @media only screen and (max-width: 1400px) {
