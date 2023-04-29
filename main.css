@@ -85,6 +85,7 @@ p#visual_text {
 }
 
 #visual-pic {
+    max-width: 100%;
     margin-left: 0px;
     height: 200px;
     width: 100%;
@@ -153,19 +154,19 @@ div#CSS-life {
 }
 
 div#JavaScript-life {
-    background-color: orange;
+    background-color: greenyellow;
     height: 100%;
     width: 50%;
 }
 
 div#React-life {
-    background-color: orange;
+    background-color: greenyellow;
     height: 100%;
     width: 50%;
 }
 
 div#smm-life {
-    background-color: yellowgreen;
+    background-color: greenyellow;
     height: 100%;
     width: 70%;
 }
