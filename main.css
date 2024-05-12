@@ -367,5 +367,9 @@ img#amy_project{
     .hamburger{
         display: initial;
     }
+    section.work{
+        display: flex;
+        flex-direction: column ;
+    }
 
 }
