@@ -347,11 +347,15 @@ img#amy_project{
         display: initial;
     }
 
-    div#action-box {
-        
+  
+    section.work{
+        display: flex;
+        flex-direction: column;
+    } 
+
+    div.project-box{
+        margin-bottom: 5%;
     }
-
-
 
 
 
@@ -366,6 +370,14 @@ img#amy_project{
 
     .hamburger{
         display: initial;
+    }
+    section.work{
+        display: flex;
+        flex-direction: column;
+    } 
+    
+    div.project-box{
+        margin-bottom: 5%;
     }
 
 
