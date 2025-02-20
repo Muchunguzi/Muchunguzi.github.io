@@ -355,6 +355,21 @@ img#amy_project{
 
     div.project-box{
         margin-bottom: 5%;
+        overflow: hidden;
+    }
+    img#amy_project{
+        margin-top: 20%;
+    }
+    img#adams_project{
+        margin-top: 20%;
+        height: 300px;
+        width: 350px;
+
+    }
+    img#comment{
+        margin-top: 25%;
+        height: 300px;
+        width: 350px;
     }
 
 
@@ -378,7 +393,25 @@ img#amy_project{
     
     div.project-box{
         margin-bottom: 5%;
+        overflow: hidden;
+        
     }
+    div.project-box> img{
+        height:fit-content;
+    }
+    img#amy_project{
+        margin-top: 20%;
+    }
+    img#adams_project{
+        margin-top: 20%;
+        height: 200px;
+        width: 250px;
 
+    }
+    img#comment{
+        margin-top: 25%;
+        height: 200px;
+        width: 250px;
+    }
 
 }
