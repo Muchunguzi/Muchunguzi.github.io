@@ -292,6 +292,9 @@ img#milesHR_project{
     height: 100%;
 }
 
+.btn{
+    margin-bottom: 10px;
+}
 
 
 
@@ -366,15 +369,15 @@ img#milesHR_project{
 
     /*Big smartphones [425px -> 600px]*/
     a.nav-link {
-        display: none;
+        display: initial;
     }
 
     .hamburger{
-        display: initial;
+        display: none;
     }
 
     .mobile-menu{
-        display: initial;
+        display: none;
     }
 
   
@@ -395,11 +398,11 @@ img#milesHR_project{
     /*Small smartphones [325px -> 425px]*/
 
     a.nav-link {
-        display: none;
+        display: initial;
     }
 
     .hamburger{
-        display: initial;
+        display: none;
     }
     section.work{
         display: flex;
