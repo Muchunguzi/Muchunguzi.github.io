@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #2563eb;   /* change this to match your theme */
+  --text-color: #1f2933;
+  --bg-light: #f8fafc;
+}
+
 body {
     background-color: white;
     font-family: Roboto;
@@ -306,6 +312,84 @@ header{
 }
 
 
+.web-designer-skills {
+  padding: 2.5rem;
+  background: var(--bg-light);
+  border-radius: 14px;
+  max-width: 900px;
+  margin: auto;
+  animation: fadeUp 0.8s ease-in-out;
+}
+
+.web-designer-skills h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  position: relative;
+}
+
+.web-designer-skills h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: var(--primary-color);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  border-radius: 2px;
+}
+
+/* Two-column layout */
+.skills-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.9rem 1.5rem;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+/* Custom bullets */
+.skills-list li {
+  position: relative;
+  padding-left: 1.8rem;
+  font-size: 0.95rem;
+  color: var(--text-color);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.skills-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Hover effect */
+.skills-list li:hover {
+  transform: translateX(6px);
+  color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 @media only screen and (min-width : 2000px){
