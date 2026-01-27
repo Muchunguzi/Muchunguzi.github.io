@@ -254,18 +254,18 @@ a.mobile-nav:hover{
 }
 
 section.work{
-    background-color: gray;
+    border:2px solid #4988C4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 5%;
     padding: 2%;
-    border-radius: 1%;
+    
 }
 
 
 div.project-box{
     border-radius: 5%;
-    background-color: black;
+    background-color: #4988C4;
     padding: 3%;
     width: 70%;
     height: 90%;
@@ -304,6 +304,10 @@ img#milesHR_project{
 
 header{
     
+    background-color: #4988C4;
+}
+
+footer{
     background-color: #4988C4;
 }
 
