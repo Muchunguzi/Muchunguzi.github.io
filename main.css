@@ -121,9 +121,7 @@ li {
 
 #cv-button {
     width: 100px;
-    background-color: black;
-    border: 1px solid black;
-    color: white;
+    
     margin: 0 auto;
     margin-bottom: 10px;
     border-radius: 3px;
@@ -294,6 +292,17 @@ img#milesHR_project{
 
 .btn{
     margin-bottom: 10px;
+}
+
+
+
+header{
+    
+    background-color: #4988C4;
+}
+
+.progress{
+ margin-bottom : 10px;
 }
 
 
