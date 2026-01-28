@@ -4,9 +4,12 @@
   --bg-light: #f8fafc;
 }
 
+*{
+    font-family: "Merriweather" , serif ;
+}
+
 body {
     background-color: white;
-    font-family: "Merriweather", serif;
     text-align: center;
 }
 
@@ -89,7 +92,7 @@ button.callToAction {
 p#visual_text {
     font-weight: bold;
     font-size: 2rem;
-
+    
     height: 100%;
 }
 
