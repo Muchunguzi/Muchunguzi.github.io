@@ -196,12 +196,13 @@ button#cv-button:hover {
 }
 
 .fa-brands {
-    margin-left: 20px;
+
+    margin: 0 auto;
 }
 
 .fa-brands:hover {
     cursor: pointer;
-    color: white;
+   
 }
 
 .hamburger{
@@ -405,7 +406,6 @@ footer{
     transform: translateY(0);
   }
 }
-
 
 @media only screen and (min-width : 2000px){
     /*bigger screens */
