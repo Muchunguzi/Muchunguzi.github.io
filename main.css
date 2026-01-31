@@ -1,7 +1,24 @@
+:root {
+  --primary-color: #2563eb;   /* change this to match your theme */
+  --text-color: #1f2933;
+  --bg-light: #f8fafc;
+}
+
+*{
+    font-family: "Merriweather" , serif ;
+}
+
 body {
     background-color: white;
-    font-family: Roboto;
     text-align: center;
+}
+
+h1, h2 , h3{
+    font-weight : 700;
+}
+
+p, li{
+    font-weight : 400;
 }
 
 #header,
@@ -75,7 +92,7 @@ button.callToAction {
 p#visual_text {
     font-weight: bold;
     font-size: 2rem;
-
+    
     height: 100%;
 }
 
@@ -121,9 +138,7 @@ li {
 
 #cv-button {
     width: 100px;
-    background-color: black;
-    border: 1px solid black;
-    color: white;
+    
     margin: 0 auto;
     margin-bottom: 10px;
     border-radius: 3px;
@@ -181,12 +196,13 @@ button#cv-button:hover {
 }
 
 .fa-brands {
-    margin-left: 20px;
+
+    margin: 0 auto;
 }
 
 .fa-brands:hover {
     cursor: pointer;
-    color: white;
+   
 }
 
 .hamburger{
@@ -250,18 +266,18 @@ a.mobile-nav:hover{
 }
 
 section.work{
-    background-color: gray;
+    border:2px solid #4988C4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 5%;
     padding: 2%;
-    border-radius: 1%;
+    
 }
 
 
 div.project-box{
     border-radius: 5%;
-    background-color: black;
+    background-color: #4988C4;
     padding: 3%;
     width: 70%;
     height: 90%;
@@ -292,9 +308,104 @@ img#milesHR_project{
     height: 100%;
 }
 
+.btn{
+    margin-bottom: 10px;
+}
 
 
 
+header{
+    
+    background-color: #4988C4;
+}
+
+footer{
+    background-color: #4988C4;
+}
+
+.progress{
+ margin-bottom : 10px;
+}
+
+
+.web-designer-skills {
+  padding: 2.5rem;
+  background: var(--bg-light);
+  border-radius: 14px;
+  max-width: 900px;
+  margin: auto;
+  animation: fadeUp 0.8s ease-in-out;
+}
+
+.web-designer-skills h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  position: relative;
+}
+
+.web-designer-skills h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: var(--primary-color);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  border-radius: 2px;
+}
+
+/* Two-column layout */
+.skills-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.9rem 1.5rem;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+/* Custom bullets */
+.skills-list li {
+  position: relative;
+  padding-left: 1.8rem;
+  font-size: 0.95rem;
+  color: var(--text-color);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.skills-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Hover effect */
+.skills-list li:hover {
+  transform: translateX(6px);
+  color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @media only screen and (min-width : 2000px){
     /*bigger screens */
@@ -366,15 +477,15 @@ img#milesHR_project{
 
     /*Big smartphones [425px -> 600px]*/
     a.nav-link {
-        display: none;
+        display: initial;
     }
 
     .hamburger{
-        display: initial;
+        display: none;
     }
 
     .mobile-menu{
-        display: initial;
+        display: none;
     }
 
   
@@ -395,11 +506,11 @@ img#milesHR_project{
     /*Small smartphones [325px -> 425px]*/
 
     a.nav-link {
-        display: none;
+        display: initial;
     }
 
     .hamburger{
-        display: initial;
+        display: none;
     }
     section.work{
         display: flex;
